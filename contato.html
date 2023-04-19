@@ -12,35 +12,58 @@
 <body>
 
     <header>
-        <img src=""
-            alt="Foto de Guilherme">
-        <h1>Guilherme Vizzoni</h1>
+        <ul class="menu">
+            <li><a class="links" href="#" Portfolio>PORTFOLIO</a></li>
+        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a class="links" href="https://guivizzoni.github.io/Portfolio/index.html">HOME</a></li>
+                <li><a class="links" href="https://guivizzoni.github.io/Portfolio/servicos.html">SERVIÇOS</a></li>
+                <li><a class="links" href="https://guivizzoni.github.io/Portfolio/contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="https://guivizzoni.github.io/Portfolio/index.html">HOME</a></li>
-            <li><a href="https://guivizzoni.github.io/Portfolio/servicos.html">SERVIÇOS</a></li>
-            <li><a href="https://guivizzoni.github.io/Portfolio/contato.html">CONTATO</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <p class="textop"
-                    style="color: black; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                    Encontrou algum bug, problema, erro no nosso site? contate-nos para resolver o mais rápido possível!
-                    <br>
-                    <form action="https://formspree.io/f/mvoydbvy" method="post">
-                        <label style="color:black;" class="textop" for="name">Nome</label><br>
-                        <input class="textop"  id="name" type="text" name="name" value="Digite seu nome"><br>
-                        <label style="color:black;" class="textop"  for="email">E-mail</label><br>
-                        <input class="textop"  type="text" id="email" name="email" value="Digite seu e-mail"><br>
-                        <label style="color:black;" class="textop" for="message">Mensagem</label><br>        
-                        <textarea class="textop"  name="message" style="width:200px; height:200px;">Digite sua Mensagem</textarea><br>
-                        <br>
-                        <input class="textop"  type="submit">
-                    </form>
-
+        <div class="conteudo">
+            <b class="textop">Minhas redes sociais</b>
+            <br>
+            <img class="fotocontato" src="https://i.pinimg.com/736x/35/6c/59/356c592cbdf902c4c63f0462c12981b8--shocked-cat-hilarious-memes.jpg"
+                alt="">
+            <br>
+            <ul class="redes-sociais">
+                <li><img id="redes-sociais" src="/Imagens/githubicon.png" alt=""></li>
+                <li><img id="redes-sociais" src="/Imagens/linkedinicon.png" alt=""></li>
+                <li><img id="redes-sociais" src="/Imagens/facebookicon.png" alt=""></li>
+                <li><img id="redes-sociais" src="/Imagens/instagramicon.png" alt=""></li>
+                <li><img id="redes-sociais" src="/Imagens/twittericon.png" alt=""></li>
+                <li><img id="redes-sociais" src="/Imagens/whatsappicon.png" alt=""></li>
+            </ul>
+            <br>
+            <b class="textop">Mande um e-mail</b>
+            <br>
+            <p class="textop"
+                style="color: black; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                Encontrou algum bug, problema ou erro no site? mande um email para que eu possa resolver o mais rápido
+                possível! </p>
+            <br>
+            <form action="https://formspree.io/f/mvoydbvy" method="post">
+                <label style="color:black;" class="textop" for="name">Nome</label>
+                <br>
+                <input class="textop" id="name" type="text" name="name" value="Digite seu nome">
+                <br>
+                <label style="color:black;" class="textop" for="email">E-mail</label>
+                <br>
+                <input class="textop" type="text" id="email" name="email" value="Digite seu e-mail">
+                <br>
+                <label style="color:black;" class="textop" for="message">Mensagem</label>
+                <br>
+                <textarea class="textop" name="message"
+                    style="width:200px; height:200px;">Digite sua Mensagem</textarea>
+                <br>
+                <input class="textop" type="submit">
+            </form>
+        </div>
     </main>
 
     <footer>
