@@ -5,6 +5,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header{
     background-color: #202022;
     display: flex;
