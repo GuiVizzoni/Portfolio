@@ -121,6 +121,14 @@ main{
     justify-content:center;
 }
 
+.sections {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    background-color: #925A41;
+    padding: 15px;
+}
+
 #redes-sociais {
     border-radius: 10px;
     width: 48px;
@@ -139,6 +147,12 @@ main{
 
 .textop {
     font-size: 20px;
+}
+
+.textop-section {
+    font-weight: bold;
+    font-size: 30px;
+    color: aliceblue;
 }
 
 footer{
