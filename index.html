@@ -8,16 +8,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="./Imagens/githubicon2.png">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <section id="inicio">
     </section>
     <header>
-        <ul class="menu">
-            <li><a class="links" href="#" Portfolio>PORTFOLIO</a></li>
-        </ul>
-        <nav>
+        <nav class="nav-list">
+            <ul class="menu">
+                <li><a class="links" href="#" Portfolio>PORTFOLIO</a></li>
+            </ul>
             <ul class="menu">
                 <li><a class="links" href="#home">HOME</a></li>
                 <li><a class="links" href="#servicos">SERVIÇOS</a></li>
@@ -26,6 +27,22 @@
         </nav>
 
     </header>
+
+    <div class="menu-vertical">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#" class="active"><img class="imga" src="./Imagens/logo.png"></a>
+            <div id="myLinks">
+                <a href="#home">HOME</a>
+                <a href="#servicos">SERVIÇOS</a>
+                <a href="#contato">CONTATO</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="iconvert"><img class="imgv" src="./Imagens/linhas.png"></i>
+            </a>
+        </div>
+    </div>
 
     <main>
         <div class="conteudo">
