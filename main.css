@@ -45,7 +45,8 @@ background-color:#878787;
 }
 
 .links:hover{
-    color: #00BBC9;
+    color: aliceblue;
+    text-shadow: 0 0 0.8em aliceblue;
 }
 
 .links-section {
