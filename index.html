@@ -1,207 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" id="html" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Guilherme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+    <link rel="stylesheet" href="/src/css/style.css">
+  </head>
+  <body id="body" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <header class="bg-white dark:bg-gray-800 fixed w-full top-0 shadow z-50 transition-colors">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-300">Guilherme</h1>
+        <div class="flex items-center gap-4">
+          <button id="theme-toggle" class="text-2xl">🌙</button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="./Imagens/githubicon2.png">
-    <script src="main.js"></script>
-</head>
-
-<body>
-    <section id="inicio">
-    </section>
-    <header>
-        <nav class="nav-list">
-            <ul class="menu">
-                <li><a class="links" href="#" Portfolio>PORTFOLIO</a></li>
+          <nav>
+            <button class="md:hidden text-2xl" id="menu-toggle">☰</button>
+            <ul class="hidden md:flex space-x-6 font-semibold" id="menu">
+              <li><a href="#sobre" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Sobre</a></li>
+              <li><a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Skills</a></li>
+              <li><a href="projetos.html" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Projetos</a></li>
+              <li><a href="certificados.html" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Certificados</a></li>
+              <li><a href="#contato" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Contato</a></li>
             </ul>
-            <ul class="menu">
-                <li><a class="links" href="#home">HOME</a></li>
-                <li><a class="links" href="#servicos">SERVIÇOS</a></li>
-                <li><a class="links" href="#contato">CONTATO</a></li>
-            </ul>
-        </nav>
-
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <div class="menu-vertical">
-
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-            <a href="#" class="active"><img class="imga" src="./Imagens/logo.png"></a>
-            <div id="myLinks">
-                <a href="#home">HOME</a>
-                <a href="#servicos">SERVIÇOS</a>
-                <a href="#contato">CONTATO</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="iconvert"><img class="imgv" src="./Imagens/linhas.png"></i>
-            </a>
+    <main class="pt-24">
+      <section id="sobre" class="py-16 px-4 bg-blue-50 dark:bg-gray-900 transition-colors">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Sobre Mim</h2>
+          <p class="text-lg">
+            Oi! Eu sou o Guilherme 👋<br />
+            Estudante de Ciência da Computação (6º período - UVV), apaixonado por tech,
+            desenvolvimento full-stack, automações e games. Sempre buscando
+            aprender mais e enfrentar novos desafios!
+          </p>
         </div>
-    </div>
+      </section>
 
-    <main>
-        <div class="conteudo">
-            <section class="sections" id="home">
-                <p class="textop-section">Meu Portfólio</p>
-            </section>
-            <div class="menu2">
-                <div id="textop">
-                    <h1>Guilherme Vizzoni</h1>
-                    <br>
-                    <p>Olá, meu nome é Guilherme Vizzoni Haidmann, estou cursando Ciência da Computação na Universidade
-                        Vila Velha.
-                        <br>
-                        Conclui o Ensino Médio e o curso Técnico de Informática no ano de 2022, na instituição Centro
-                        Técnico Radier.
-                        <br>
-                        Gosto de trabalhar em equipe, sou competitivo, entrego o trabalho o mais rápido possível.
-                    </p>
-                    <br>
-                    <p>Desde pequeno sempre tive uma afinidade a assuntos relacionados a área de computação, tanto
-                        quanto hardwares e softwares e em jogos, em como eles são criados e programados.
-                        <br>
-                        No ano de 2020, conheci mais afundo na área de programação, onde me encontrei e desde então sigo
-                        buscando maior conhecimento.
-                    </p>
-                </div>
-
-                <div class="foto">
-                    <img id="foto"
-                        src="./Imagens/fotosobre.jpg"
-                        alt="Foto de Guilherme">
-                </div>
-            </div>
-
-            <br>
-            <section class="sections" id="servicos">
-                <p class="textop-section">Meus Serviços</p>
-            </section>
-            <br>
-            <div class="conteudo-servico">
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/html5icon.png" alt="html5">
-                    <p class="textop">HTML5 é Linguagem de marcação usada para criar e estruturar conteúdo na web. É
-                        utilizada
-                        na criação de páginas web e aplicativos móveis.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/css3icon.png" alt="css3">
-                    <p class="textop">CSS3 é uma linguagem de estilo usada para definir o layout e o design visual de
-                        uma página
-                        web. É usada em conjunto com o HTML para dar estilo e formatar páginas da web.
-                    </p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/javascripticon.png" alt="JavaScript">
-                    <p class="textop">JavaScript é uma linguagem de programação usada principalmente para criar
-                        interatividade em
-                        páginas da web. Ela pode ser usada para adicionar animações, criar jogos, validar formulários e
-                        muito mais.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/javaicon.png" alt="Java">
-                    <p class="textop">Java é uma linguagem de programação orientada a objetos usada para criar
-                        aplicativos de
-                        desktop, aplicativos móveis e aplicativos web. É uma das linguagens de programação mais
-                        populares e amplamente utilizadas.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/pythonicon.png" alt="Python">
-                    <p class="textop"> Python é uma linguagem de programação de alto nível usada para criar aplicativos
-                        de
-                        desktop, aplicativos web, análise de dados, aprendizado de máquina e muito mais. É conhecida por
-                        sua simplicidade, facilidade de uso e legibilidade.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/pascalicon2.png" alt="Pascal">
-                    <p class="textop">Pascal é uma linguagem de programação estruturada usada para ensinar programação
-                        em
-                        escolas e universidades. Ela foi desenvolvida por Niklaus Wirth em 1970 e foi usada para criar
-                        aplicativos para várias plataformas.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/visualbasicicon.png" alt="Visual Basic">
-                    <p class="textop">Visual Basic é uma linguagem de programação orientada a objetos usada para criar
-                        aplicativos de desktop e aplicativos web. Ela foi desenvolvida pela Microsoft e é conhecida por
-                        sua simplicidade e facilidade de uso.</p>
-                </div>
-                <br>
-                <div class="menu3">
-                    <img id="corpo" src="./Imagens/sqlicon.png" alt="SQL">
-                    <p class="textop">SQL é uma linguagem de consulta usada para gerenciar bancos de dados relacionais. É
-                        usada para inserir, atualizar e recuperar dados em um banco de dados. Com SQL, você pode criar,
-                        modificar e excluir tabelas, bem como executar consultas que permitem extrair informações de um
-                        ou mais tabelas.
-                        <br>
-                        SQL é amplamente utilizado em aplicativos empresariais e é uma das principais ferramentas para a
-                        manipulação de dados em bancos de dados relacionais.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <section class="sections" id="contato">
-                <p class="textop-section">Minhas redes sociais</p>
-            </section>
-            
-            <img class="fotocontato"
-                src="./Imagens/redes-sociais.png"
-                alt="">
-            <br>
-            <ul class="redes-sociais">
-                <li><a href="https://github.com/GuiVizzoni"><img id="redes-sociais" src="./Imagens/githubicon.png" alt="github"></a></li>
-                <li><a href="https://www.linkedin.com/in/guilherme-vizzoni-07b146265/?originalSubdomain=br"><img
-                            id="redes-sociais" src="./Imagens/linkedinicon.png" alt="linkedin"></a></li>
-                <li><a href="https://www.facebook.com/guilherme.vizzonihaidmann/"><img id="redes-sociais" src="./Imagens/facebookicon.png" alt="facebook"></a></li>
-                <li><a href="https://www.instagram.com/guivizzoni/"><img id="redes-sociais" src="./Imagens/instagramicon.png" alt="instagram"></a></li>
-                <li><a href="#"><img id="redes-sociais" src="./Imagens/twittericon.png" alt="twitter"></a></li>
-                <li><a href="#"><img id="redes-sociais" src="./Imagens/whatsappicon.png" alt="whatsapp"></a></li>
-            </ul>
-            <br>
-            <b class="textop">Mande um e-mail</b>
-            <br>
-            <p class="textop"
-                style="color: black; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                Encontrou algum bug, problema ou erro no site? mande um email para que eu possa resolver o mais rápido
-                possível! </p>
-            <br>
-            <form action="https://formspree.io/f/mvoydbvy" method="post">
-                <label style="color:black;" class="textop" for="name">Nome</label>
-                <br>
-                <input class="textop" id="name" type="text" name="name" value="Digite seu nome">
-                <br>
-                <label style="color:black;" class="textop" for="email">E-mail</label>
-                <br>
-                <input class="textop" type="text" id="email" name="email" value="Digite seu e-mail">
-                <br>
-                <label style="color:black;" class="textop" for="message">Mensagem</label>
-                <br>
-                <textarea class="textop" name="message"
-                    style="width:200px; height:200px;">Digite sua Mensagem</textarea>
-                <br>
-                <input class="textop" type="submit">
-            </form>
-            <br>
-            <section class="sections" id="contato">
-                <p class="textop-section"><a class="links-section" href="#inicio">Clique aqui para subir</a></p>
-            </section>
+      <section id="skills" class="py-16 px-4 bg-white dark:bg-gray-800 transition-colors">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-8">Skills</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-800 dark:text-gray-100">
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🌐</span>HTML</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🎨</span>CSS</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🧠</span>JavaScript</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🐍</span>Python</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">💾</span>SQL</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">⚙️</span>C</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🛡️</span>C#</div>
+            <div class="hover:scale-110 transition-transform"><span class="block text-xl">📱</span>React Native</div>
+          </div>
         </div>
+      </section>
+
+      <section id="certificados" class="py-16 px-4 bg-blue-50 dark:bg-gray-900 transition-colors">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Certificados</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-100">
+            <li>Python para Data Science – Alura (2023)</li>
+            <li>Fundamentos de Banco de Dados – DIO (2022)</li>
+            <li>Introdução ao Desenvolvimento Web – Udemy (2023)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="py-16 px-4 bg-white dark:bg-gray-800 transition-colors">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Contato</h2>
+          <p class="mb-4">Você pode me encontrar nas redes abaixo:</p>
+          <ul class="space-y-2">
+            <li><a href="mailto:teuemail@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">📧 Email</a></li>
+            <li><a href="https://www.linkedin.com/in/seu-user/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">💼 LinkedIn</a></li>
+            <li><a href="https://github.com/seu-user" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">🐱 GitHub</a></li>
+            <li><a href="https://wa.me/55seunumerocomddd" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">📱 WhatsApp</a></li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>Developed by @GuiVizzoni</p>
+    <footer class="bg-blue-600 dark:bg-gray-950 text-white text-center py-4">
+      <p>&copy; 2025 Guilherme - Todos os direitos reservados</p>
     </footer>
 
-</body>
-
+    <script src="/src/JS/script.js"></script>
+  </body>
 </html>
