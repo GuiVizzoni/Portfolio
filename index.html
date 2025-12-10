@@ -1,96 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="html" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Guilherme</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class'
-        };
-    </script>
-    <link rel="stylesheet" href="/src/css/style.css">
-  </head>
-  <body id="body" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
-    <header class="bg-white dark:bg-gray-800 fixed w-full top-0 shadow z-50 transition-colors">
-      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-300">Guilherme</h1>
-        <div class="flex items-center gap-4">
-          <button id="theme-toggle" class="text-2xl">🌙</button>
+<html lang="pt-br" id="html" class="scroll-smooth transition-colors duration-500">
 
-          <nav>
-            <button class="md:hidden text-2xl" id="menu-toggle">☰</button>
-            <ul class="hidden md:flex space-x-6 font-semibold" id="menu">
-              <li><a href="#sobre" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Sobre</a></li>
-              <li><a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Skills</a></li>
-              <li><a href="projetos.html" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Projetos</a></li>
-              <li><a href="certificados.html" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Certificados</a></li>
-              <li><a href="#contato" class="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Contato</a></li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Guilherme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script src="https://unpkg.com/ityped@1.0.3/dist/index.min.js"></script>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" href="foto.png" />
+</head>
+
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-500">
+  <!-- Navbar -->
+  <nav
+    class="flex justify-between items-center px-8 py-4 bg-white dark:bg-gray-800 shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+      Guilherme Vizzoni
+    </h1>
+    <div class="flex items-center gap-6">
+      <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
+      <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+      <a href="#projetos" class="hover:text-blue-600 transition">Projetos</a>
+      <a href="#contato" class="hover:text-blue-600 transition">Contato</a>
+      <button id="theme-toggle" class="text-2xl transition">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main class="pt-24 space-y-8 transition-all duration-500">
+    <!-- Seção de Boas-Vindas -->
+    <section class="text-center py-16 fade-in bg-white dark:bg-gray-900 transition-colors duration-500">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          Olá! Bem-vindo ao meu portfólio! Sou
+          <span class="text-blue-600 dark:text-blue-400 font-extrabold">Guilherme Vizzoni</span>
+        </h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10">
+                Sou um entusiasta da tecnologia e estudante de Ciência da Computação, apaixonado por
+
+          <span id="ityped-text" class="text-blue-600 dark:text-blue-400 font-semibold"></span>
+
+          . Aqui você vai encontrar um pouco dos meus projetos, aprendizados e ideias que me inspiram a crescer como dev
+          todo dia 💻🚀
+             
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-6 mt-6">
+          <a href="#projetos"
+            class="w-full sm:w-auto bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-[1.02] shadow-lg">
+            Meus Projetos
+          </a>
+
+          <a href="#contato"
+            class="w-full sm:w-auto bg-transparent border-2 border-blue-600 text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all transform hover:scale-[1.02] dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900 shadow-lg">
+            Meu Contato
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="text-center space-y-6 bg-white dark:bg-gray-800 py-20 px-6 md:px-20">
+      <img src="./src/Imagens/fotosobre2.png" alt="Foto de perfil"
+        class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-blue-600 dark:border-blue-400 object-cover transition-all duration-500" />
+      <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400">
+        Sobre Mim
+      </h2>
+      <p class="max-w-4xl mx-auto leading-relaxed">
+        Olá! Sou Guilherme Vizzoni, desenvolvedor full-stack apaixonado por tecnologia, automações e games.
+        Gosto de entender como as coisas funcionam e transformar ideias em soluções reais, seja construindo interfaces
+        intuitivas ou desenvolvendo sistemas robustos no back-end.
+        <br />
+        Estou sempre em busca de novos aprendizados e desafios, explorando diferentes linguagens, ferramentas e
+        metodologias para evoluir como profissional e entregar resultados de qualidade.
+        Acredito que cada projeto é uma oportunidade de crescer, colaborar e criar algo que faça a diferença.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="text-center bg-[aliceblue] dark:bg-[#111827] py-20 px-6 md:px-20 fade-in">
+      <h2 class="text-3xl font-bold mb-10 text-blue-600 dark:text-blue-400">
+        Skills
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/python.png" alt="Python" class="w-16 h-16 mb-2" />
+          <p>Python</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/mysql.png" alt="MySQL" class="w-16 h-16 mb-2" />
+          <p>MySQL</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/html5.png" alt="HTML" class="w-16 h-16 mb-2" />
+          <p>HTML</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/css3.png" alt="CSS" class="w-16 h-16 mb-2" />
+          <p>CSS</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/javascript.png" alt="JavaScript" class="w-18 h-16 mb-2" />
+          <p>JavaScript</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/csharp.png" alt="C#" class="w-16 h-16 mb-2" />
+          <p>C#</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/react.png" alt="React" class="w-16 h-16 mb-2" />
+          <p>React</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/Imagens/typescript.png" alt="TypeScript" class="w-16 h-16 mb-2" />
+          <p>TypeScript</p>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="pt-24">
-      <section id="sobre" class="py-16 px-4 bg-blue-50 dark:bg-gray-900 transition-colors">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Sobre Mim</h2>
-          <p class="text-lg">
-            Oi! Eu sou o Guilherme 👋<br />
-            Estudante de Ciência da Computação (6º período - UVV), apaixonado por tech,
-            desenvolvimento full-stack, automações e games. Sempre buscando
-            aprender mais e enfrentar novos desafios!
-          </p>
-        </div>
-      </section>
+    <!-- PROJETOS -->
+    <section id="projetos" class="text-center bg-white dark:bg-gray-800 py-20 px-6 md:px-20 fade-in">
+      <h2 class="text-3xl font-bold mb-10 text-blue-600 dark:text-blue-400">
+        Projetos
+      </h2>
 
-      <section id="skills" class="py-16 px-4 bg-white dark:bg-gray-800 transition-colors">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-8">Skills</h2>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-800 dark:text-gray-100">
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🌐</span>HTML</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🎨</span>CSS</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🧠</span>JavaScript</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🐍</span>Python</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">💾</span>SQL</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">⚙️</span>C</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">🛡️</span>C#</div>
-            <div class="hover:scale-110 transition-transform"><span class="block text-xl">📱</span>React Native</div>
+      <div class="space-y-6">
+        <!-- Controles de ANO -->
+        <div class="flex items-center justify-center mb-6 gap-6">
+          <button id="prevYear" aria-label="Ano anterior"
+            class="px-3 py-2 text-2xl text-blue-600 hover:scale-110 transition transform">⬅️</button>
+          <div class="px-6 py-2 rounded-lg bg-white dark:bg-gray-900 shadow-sm">
+            <span id="currentYear" class="text-2xl font-semibold">2025</span>
           </div>
+          <button id="nextYear" aria-label="Próximo ano"
+            class="px-3 py-2 text-2xl text-blue-600 hover:scale-110 transition transform">➡️</button>
         </div>
-      </section>
 
-      <section id="certificados" class="py-16 px-4 bg-blue-50 dark:bg-gray-900 transition-colors">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Certificados</h2>
-          <ul class="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-100">
-            <li>Python para Data Science – Alura (2023)</li>
-            <li>Fundamentos de Banco de Dados – DIO (2022)</li>
-            <li>Introdução ao Desenvolvimento Web – Udemy (2023)</li>
-          </ul>
+        <!-- Área dos cards e controles de página (projetos dentro do ano) -->
+        <div class="flex items-center justify-center gap-4">
+          <!-- botão para página anterior de projetos (aparece só se tiver > cardsPorPage) -->
+          <button id="prevProj" aria-label="Projeto anterior"
+            class="proj-nav hidden px-3 py-2 text-2xl text-blue-600 hover:scale-110 transition transform">◀️</button>
+
+          <!-- Grid onde os cards serão renderizados dinamicamente -->
+          <div id="projetos-cards" class="grid md:grid-cols-2 gap-6 w-full max-w-4xl transition-all duration-500"></div>
+
+          <!-- botão para próxima página de projetos -->
+          <button id="nextProj" aria-label="Próximo projeto"
+            class="proj-nav hidden px-3 py-2 text-2xl text-blue-600 hover:scale-110 transition transform">▶️</button>
         </div>
-      </section>
 
-      <section id="contato" class="py-16 px-4 bg-white dark:bg-gray-800 transition-colors">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-300 mb-4">Contato</h2>
-          <p class="mb-4">Você pode me encontrar nas redes abaixo:</p>
-          <ul class="space-y-2">
-            <li><a href="mailto:teuemail@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">📧 Email</a></li>
-            <li><a href="https://www.linkedin.com/in/seu-user/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">💼 LinkedIn</a></li>
-            <li><a href="https://github.com/seu-user" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">🐱 GitHub</a></li>
-            <li><a href="https://wa.me/55seunumerocomddd" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">📱 WhatsApp</a></li>
-          </ul>
+        <!-- indicador de página (ex.: 1/2) -->
+        <div id="pageIndicator" class="mt-4 text-sm text-gray-500 dark:text-gray-400"></div>
+      </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="text-center bg-[aliceblue] dark:bg-[#111827] py-20 px-6 md:px-20 fade-in">
+      <h2 class="text-3xl font-bold mb-6 text-blue-600 dark:text-blue-400">
+        Contato
+      </h2>
+
+      <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-lg p-10 transition-all duration-700">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-500 dark:text-blue-300">
+          Vamos conversar!
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+          Estou sempre aberto a novas oportunidades, projetos interessantes e
+          colaborações.<br />
+          Sinta-se à vontade para me enviar um e-mail ou me encontrar nas
+          redes sociais!
+        </p>
+
+        <form id="contactForm" action="https://formspree.io/f/xrbnyylz" method="POST" class="space-y-4 text-left">
+          <label for="name" class="block text-sm font-medium mb-1">Nome Completo</label>
+          <input type="text" name="name" placeholder="Seu nome" required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+          <label for="email" class="block text-sm font-medium mb-1">Seu e-mail</label>
+          <input type="email" name="email" placeholder="Seu e-mail" required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+          <label for="subject" class="block text-sm font-medium mb-1">Assunto (opcional)</label>
+          <input type="text" name="subject" placeholder="Assunto (opcional)"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+          <label for="message" class="block text-sm font-medium mb-1">Sua mensagem</label>
+          <textarea name="message" placeholder="Sua mensagem" required rows="4"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+          <button type="submit"
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-[1.02]">
+            Enviar Mensagem
+          </button>
+
+          <p id="msg-enviada" class="hidden text-green-500 font-semibold text-center">
+            Mensagem enviada com sucesso!
+          </p>
+          <p id="msg-erro" class="hidden text-red-500 font-semibold text-center">
+            Ocorreu um erro! Tente novamente mais tarde.
+          </p>
+        </form>
+
+        <div class="flex justify-center gap-10 mt-10">
+          <a href="https://github.com/GuiVizzoni" target="_blank"
+            class="group flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all transform hover:scale-110">
+            <svg class="w-10 h-10 mb-1 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.46-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.99-.28 2.04-.42 3.1-.42s2.11.14 3.1.42c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.93.43.37.81 1.09.81 2.21 0 1.6-.02 2.89-.02 3.29 0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            <span class="text-xs group-hover:underline">GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/guilherme-vizzoni-07b146265/" target="_blank"
+            class="group flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all transform hover:scale-110">
+            <svg class="w-10 h-10 mb-1 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.78-1.75-1.72 0-.95.78-1.72 1.75-1.72s1.75.77 1.75 1.72c0 .94-.78 1.72-1.75 1.72zm13.5 11.28h-3v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.7h-3v-10h2.88v1.37h.04c.4-.76 1.38-1.56 2.83-1.56 3.03 0 3.59 2 3.59 4.57v5.62z" />
+            </svg>
+            <span class="text-xs group-hover:underline">LinkedIn</span>
+          </a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="bg-blue-600 dark:bg-gray-950 text-white text-center py-4">
-      <p>&copy; 2025 Guilherme - Todos os direitos reservados</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="text-center py-6 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm">
+    © 2025 Guilherme Vizzoni. Todos os direitos reservados.
+  </footer>
 
-    <script src="/src/JS/script.js"></script>
-  </body>
+  <script src="/src/JS/script.js"></script>
+</body>
+
 </html>

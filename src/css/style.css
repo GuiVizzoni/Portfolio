@@ -15,3 +15,42 @@ main {
 footer {
 
 }
+
+.slide-enter-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-enter-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*
+ * Garante que o cursor do iTyped seja um bloco visível
+ * e controla a animação de piscar.
+ */
+.ityped-cursor {
+    font-size: 1.5em; /* Aumenta um pouco o tamanho para visibilidade */
+    opacity: 1;
+    color: #3b82f6; /* Cor do cursor (azul primário do Tailwind) */
+    font-weight: 500;
+    
+    /* Animação de piscar (blink) */
+    animation: blink 0.7s infinite;
+    animation-direction: alternate;
+}
+
+/* Definição da animação (keyframes) */
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
