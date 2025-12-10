@@ -54,7 +54,7 @@ const projetos = {
         titulo: "Projeto LoveWithU",
         descricao: "O LoveWithU é uma plataforma digital voltada para casais que desejam registrar e reviver momentos especiais do relacionamento. A aplicação oferece uma interface amigável, além de integração com ferramentas de backend modernas para garantir segurança, desempenho e escalabilidade.",
         github: "https://github.com/LoveWithU2/LoveWithU_Oficial",
-        imagem: "./src/Imagens/Projetos/2025/loveWithU.png"
+        imagem: "./src/Imagens/Projetos/2025/LoveWithU.png"
       },
       {
         titulo: "Jogo 3D com Unity",
