@@ -59,7 +59,7 @@ const projetos = {
       {
         titulo: "Jogo 3D com Unity",
         descricao: "Sistema de NPCs e mecânicas de combate, experimentos com design de IA.",
-        github: "https://github.com/seuprojeto2025",
+        github: "https://github.com/GuiVizzoni/Rise-Of-Nature",
         imagem: "./src/Imagens/Projetos/2025/RiseOfNature.png"
       },
       {
